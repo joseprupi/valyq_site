@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valyq - AI Model Validation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #2b2f3a;
+      color: #fff;
+    }
+    header .logo img {
+      max-height: 40px;
+    }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul li {
+      margin: 0 10px;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: #fff;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .hero p {
+      margin: 10px 0;
+      font-size: 1em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about, .services, .demo, .features, .cta, .footer {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .about h2, .services h2, .demo h2, .features h2, .cta h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+      color: #007bff;
+    }
+    .service-item, .video-item, .feature-item {
+      margin: 20px 0;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .footer {
+      background-color: #2b2f3a;
+      color: #fff;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    form input, form button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Valyq Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">How It Works</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#cta" class="cta-button">Get Started</a>
+</header>
+
+<section class="hero">
+  <h1>Revolutionize Your Model Validation with AI</h1>
+  <p>Valyq leverages cutting-edge artificial intelligence to ensure your models are accurate, reliable, and compliant.</p>
+  <a href="#demo" class="cta-button">Watch Our Demos</a>
+</section>
+
+<section id="about" class="about">
+  <h2>About Valyq</h2>
+  <p>At Valyq, we specialize in AI-driven model validation, ensuring your predictive models deliver accurate and reliable results. Our solution simplifies validation by automating testing and documentation, so you can focus on what matters most.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>How It Works</h2>
+  <div class="service-item">
+    <h3>Step 1: Provide Your Inputs</h3>
+    <p>Submit your model documentation, data and the model implementation.</p>
+  </div>
+  <div class="service-item">
+    <h3>Step 2: Request Validations</h3>
+    <p>Using natural language, ask Valyq to perform specific validations like "Calculate the ROC AUC" or other performance metrics.</p>
+  </div>
+  <div class="service-item">
+    <h3>Step 3: Receive Results</h3>
+    <p>Valyq computes the requested validations and provides accurate results along with insights for the test data.</p>
+  </div>
+  <div class="service-item">
+    <h3>Step 4: Generate a Validation Document</h3>
+    <p>Compile all performed tests and their outcomes into a comprehensive validation document for compliance and reporting purposes.</p>
+  </div>
+</section>
+
+<section id="demo" class="demo">
+  <h2>See Valyq in Action</h2>
+  <div class="video-item">
+    <h3>Valyq in action</h3>
+    <iframe 
+      src="https://www.youtube.com/embed/EueEgeRmAmA" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video-item">
+    <h4>The inputs</h4>
+    <iframe 
+      src="https://www.youtube.com/embed/zcoHgnRuF3c" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <h2>Ready to Validate Your Models with AI?</h2>
+  <p>Contact us today to schedule a free consultation.</p>
+  <a href="#contact" class="cta-button">Get Started Now</a>
+</section>
+
+<footer id="contact" class="footer">
+  <div>
+    <p>Email: info@valyq.com</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</footer>
+
+</body>
+</html>
